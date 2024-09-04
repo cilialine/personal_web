@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="decoration.css">
+    <style style="overflow-x: hidden;">
+    </style>
+</head>
+
+<body onload="checkLocalStorage()">
+    <!--头部导航栏内容-->
+    <div id="header_first">
+        <ul class="first">
+            <div class="header">
+
+                <div id="openbuttons">
+                    <div style="cursor:pointer;">
+                        <div class="left_bar_open" onclick="openFunction(this)">
+                            <div class="bar1">
+                            </div>
+                            <div class="bar2">
+                            </div>
+                            <div class="bar3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./web.html"><img src="logo_white.png" alt="学生在线 精彩无限" width="15%" height="60%"></a>
+                <div class="wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="搜搜看">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search" onclick="searchFunction()"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <li><a class="active" href="#home">主页</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">下拉菜单</a>
+                    <div class="dropdown-content">
+                        <a href="#">链接 1</a>
+                        <a href="#">链接 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">下拉菜单</a>
+                    <div class="dropdown-content">
+                        <a href="#">链接 1</a>
+                        <a href="#">链接 2</a>
+                        <a href="#">链接 3</a>
+                    </div>
+                </div>
+            </li>
+            <a href="#">
+                <i style="float:right;color: white;padding-top: 6.5px; padding-bottom: 6.5px;"
+                    class=" fa fa-cog fa-spin fa-3x"></i>
+            </a>
+
+        </ul>
+    </div>
+    <!--主体左侧导航栏-->
+    <div id="middle">
+        <div id="mychangebuttons" class="sidenav">
+            <div class="left_2">
+                <a href="#">链接1</a>
+            </div>
+            <div class="left_2">
+                <a href="#">
+                    链接2
+                </a>
+            </div>
+            <div class="left_2">
+                <a href="#">
+                    链接3
+
+                </a>
+            </div>
+            <div class="left_2">
+                <a href="#">
+                    链接4
+                </a>
+            </div>
+            <div class="left_2">
+                <a href="#">
+                    链接5</a>
+            </div>
+            <div class="left_2">
+                <a href="#">
+                    链接6
+                </a>
+            </div>
+            <img src="s.webp" alt="花花" width="150" height="100" style="padding-top: 30%;">
+        </div>
+
+        <!-- 主页展示内容 -->
+        <div class="middle_content">
+            <div class="photo">
+                <ul class="list">
+                    <li class="item active"><img src="logo_white.png" style="width: 670px;
+            height: 130px ;padding-top: 19%;padding-left: 22.5%;"></li>
+                    <li class="item"><img src="R-C.jpg" style="padding: 0;width: 100%;
+                    height: 100%;"></li>
+                    <li class="item"><img src="OIP-C (3).jpg" style="padding: 0;width: 100%;
+                    height: 100%;"></li>
+                    <li class="item"><img src="OIP-C.jpg" style="padding: 0;width: 100%;
+                    height: 100%;"></li>
+                    <li class="item"><img src="OIP-C (1).jpg" style="padding: 0;width: 100%;
+                    height: 100%;"></li>
+                </ul>
+
+                <ul id="photolist">
+                    <li class="point active" data-index=0></li>
+                    <li class="point" data-index=1></li>
+                    <li class="point" data-index=2></li>
+                    <li class="point" data-index=3></li>
+                    <li class="point" data-index=4></li>
+                </ul>
+
+                <button class="btn" id="leftBtn">
+                    < </button>
+                        <button class="btn" id="rightBtn"> > </button>
+            </div>
+            <div class="content">
+                <div class="content_next">
+                    <h1>第一列</h1><br>
+                    css:从入门到放弃 <br> 写代码 写 写不出来 继续写 写啊写啊写 写不出来 写啊写啊写 写啊写啊写 写啊写啊写 还是写不出来<br> 决定回家种地 哦 我没有地 哼哼
+                    继续写代码
+                    写啊写啊写 总有一天写出来
+                </div>
+
+                <div class="content_next">
+                    <h1>第二列</h1><br>
+                    JavaScript <br> JavaScript
+                    是一种脚本编程语言,它可以在网页上实现复杂的功能,网页展现给你的不再是简单的静态信息,而是实时的内容更新—交互式的地图、2D/3D
+                    动画、滚动播放的视频等等—JavaScript 就在其中。它是标准 Web 技术蛋糕的第三层。<br>JavaScript
+                    是一种脚本语言，可以用来创建动态更新的内容，控制多媒体，制作图像动画，还有很多。（好吧，虽然它不是万能的，但可以通过简短的代码来实现神奇的功能。
+                </div>
+            </div>
+            <!-- 吃点啥好嘞 -->
+            <div class="food">
+                <div class="food1">今天吃什么好呢？<br>我想在</div>
+                <div class="food2">
+                    <div class="food3">
+                        <div style="padding: 2%;" id="outbutton">外面吃</div>
+                    </div>
+                    <div class="food3">
+                        <div style="padding: 2%;" id="inbutton">学校吃</div>
+                    </div>
+                </div>
+                <div id="eatfood"></div>
+                <div class="foodphoto"><img src="3e194e6045fe42af92b3edf5ad0fbf47.webp"></div>
+            </div>
+            <div class="good">
+                <div id="good1">我的大作业可以过关吗？<br>（狗头保命）</div>
+                <div class="good2">
+                    <div class="good3">
+                        <div onclick="f1()">当然啦！没问题！</div>
+                    </div>
+                    <div class="good4" id="Bn">
+                        <div onmouseover="f()" onclick="f2()">不行</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 向上返回按钮 -->
+    <div class="up">
+        <a href="#"><i class="fa fa-arrow-circle-o-up" style="font-size:350%;color:red;padding-top:13%;"></i></a>
+    </div>
+
+    <div class="right_bar">
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript" src="index.js"></script>
+
+
+</body>
+
+</html>
